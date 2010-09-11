@@ -1,0 +1,8 @@
+Copyright (C) 2007-2009 John Tsiombikas <nuclear@siggraph.org>
+* Original work
+
+Copyright (C) 2009 Tamas Nepusz <tamas@cs.rhul.ac.uk>
+* Single nearest neighbor search
+
+Copyright (C) 2010 Scott Deming <sdeming@makefile.com>
+* C++ derivative
