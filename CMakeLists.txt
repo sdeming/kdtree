@@ -5,8 +5,14 @@ set (LIBRARY_OUTPUT_PATH "./lib")
 
 include_directories (.)
 
-set (SRCS ./kdtree.h)
+# lib/libkdtree.so
+set (SRCS ./kdtree.cpp)
 link_libraries (pthread)
 add_library (kdtree SHARED ${SRCS})
+set_target_properties(kdtree PROPERTIES LINKER_LANGUAGE CXX)
 
-set_target_properties(kdtree PROPERTIES LINKER_LANGUAGE C)
+# examples
+add_subdirectory(examples)
+
+
+
