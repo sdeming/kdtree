@@ -14,3 +14,13 @@ set_target_properties(kdtree PROPERTIES LINKER_LANGUAGE CXX)
 # examples
 add_subdirectory(examples)
 
+# install
+INSTALL(TARGETS kdtree
+  RUNTIME DESTINATION bin
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+)
+
+INSTALL(FILES include/kdtree.h DESTINATION include)
+
+
