@@ -41,8 +41,9 @@ int main(int argc, char **argv) {
   
   /* add some random nodes to the tree (assert nodes are successfully inserted) */
   for( i=0; i<num_pts; i++ ) {
+    double pos[3] = { rd(), rd(), rd() };
     data[i] = 'a' + i;
-    assert( 0 == kd_insert3( ptree, rd(), rd(), rd(), &data[i] ) );
+    assert( 0 == kd_insert( ptree, pos, &data[i] ) );
   }
 
   /* find points closest to the origin and within distance radius */
